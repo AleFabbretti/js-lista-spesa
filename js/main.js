@@ -8,4 +8,14 @@
 
   const listContainer = document.getElementById("shopping-list");
 
-  
+ //creo il ciclo while
+  let currentIndex = 0;
+  while( currentIndex <= listShopping.length -1){
+    let item = document.createElement("li");
+
+    item.innerHTML = listShopping[currentIndex];
+
+    listContainer.append(item);
+
+    currentIndex++;
+ } 
