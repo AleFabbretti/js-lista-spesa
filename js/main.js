@@ -11,11 +11,16 @@
  //creo il ciclo while
   let currentIndex = 0;
   while( currentIndex <= listShopping.length -1){
+
+    //creo un elemento 
     let item = document.createElement("li");
 
+    //vado ad impostare il contenuto dell'item
     item.innerHTML = listShopping[currentIndex];
 
+    //inserisco l'elemento appena creato nella lista html
     listContainer.append(item);
 
+    //inserisco istruzioni per terminare il ciclo
     currentIndex++;
  } 
